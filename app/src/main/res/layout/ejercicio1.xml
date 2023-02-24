@@ -180,4 +180,12 @@
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="62dp"
         tools:layout_editor_absoluteY="656dp" />
+
+    <TextView
+        android:id="@+id/lblResultadosEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="685dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

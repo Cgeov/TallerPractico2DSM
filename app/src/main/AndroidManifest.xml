@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".Ejercicio1Activity"/>
         <activity android:name=".Ejercicio2Activity"/>
+        <activity android:name=".Ejercicio3Activity"/>
     </application>
 
 </manifest>

@@ -23,6 +23,8 @@ class Ejercicio1Activity : AppCompatActivity() {
         val txtNota4 = findViewById<EditText>(R.id.txtNota4)
         val txtNota5 = findViewById<EditText>(R.id.txtNota5)
         val boton = findViewById<Button>(R.id.btnPromedio)
+        val resultado = findViewById<TextView>(R.id.lblResultado1)
+        val estado = findViewById<TextView>(R.id.lblResultadosEstado)
 
         boton.setOnClickListener{
             val nota1 = txtNota1.text.toString().toFloat()
@@ -32,11 +34,11 @@ class Ejercicio1Activity : AppCompatActivity() {
             val nota5 = txtNota5.text.toString().toFloat()
 
             val promedio = String.format("%.2f", (nota1+nota2+nota3+nota4+nota5)/5)
-
+            resultado.text = "${txtNombre.toString()} su promedio de notas es: ${promedio}"
             if (promedio.toFloat() >= 6){
-
+                estado.text = "Estado: Aprobado"
             }else{
-
+                estado.text = "Estado: Reprobado"
             }
         }
 
