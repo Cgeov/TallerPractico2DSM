@@ -34,7 +34,7 @@ class Ejercicio1Activity : AppCompatActivity() {
             val nota5 = txtNota5.text.toString().toFloat()
 
             val promedio = String.format("%.2f", (nota1+nota2+nota3+nota4+nota5)/5)
-            resultado.text = "${txtNombre.toString()} su promedio de notas es: ${promedio}"
+            resultado.text = "${txtNombre.text.toString()}, su promedio de notas es: ${promedio}"
             if (promedio.toFloat() >= 6){
                 estado.text = "Estado: Aprobado"
             }else{

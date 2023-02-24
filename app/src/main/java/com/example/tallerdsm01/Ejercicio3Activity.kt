@@ -1,6 +1,9 @@
 package com.example.tallerdsm01
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -26,7 +29,7 @@ class Ejercicio3Activity: AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                Toast.makeText(this,"No se ha seleccionado nada",Toast.LENGTH_LONG)
+                //Toast.makeText(this,"No se ha seleccionado nada",Toast.LENGTH_LONG)
             }
         }
 
@@ -51,8 +54,35 @@ class Ejercicio3Activity: AppCompatActivity() {
                         Toast.makeText(this,"No existe",Toast.LENGTH_LONG).show()
                     }
                 }
+            }else{
+                Toast.makeText(this,"No se puede dividir entre 0", Toast.LENGTH_LONG).show()
             }
 
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.opciones, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item.itemId
+        if (id == R.id.opcion1) {
+            Toast.makeText(this, "Se seleccionó la primer opción", Toast.LENGTH_LONG).show()
+            val intent = Intent(this,  Ejercicio1Activity::class.java)
+            startActivity(intent)
+        }
+        if (id == R.id.opcion2) {
+            Toast.makeText(this, "Se seleccionó la segunda opción", Toast.LENGTH_LONG).show()
+            val intent = Intent(this, Ejercicio2Activity::class.java)
+            startActivity(intent)
+        }
+        if (id == R.id.opcion3) {
+            Toast.makeText(this, "Se seleccionó la tercer opción", Toast.LENGTH_LONG).show()
+            val intent = Intent(this, Ejercicio3Activity::class.java)
+            startActivity(intent)
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

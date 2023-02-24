@@ -36,6 +36,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="136dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -178,14 +179,21 @@
         android:id="@+id/lblResultado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="656dp" />
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPromedio" />
 
     <TextView
         android:id="@+id/lblResultadosEstado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="685dp"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="685dp" />
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
