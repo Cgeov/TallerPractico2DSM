@@ -13,11 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="32dp"
         android:text="Salario Base:"
         android:textColor="@color/white"
+        android:textSize="40px"
         app:hintTextColor="@color/white"
-        android:textSize="50px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre2" />
 
@@ -30,7 +30,7 @@
         android:ems="10"
         android:foregroundTint="#FFFFFF"
         android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -40,10 +40,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="8dp"
         android:text="Nombre:"
         android:textColor="@color/white"
-        android:textSize="50px"
+        android:textSize="40px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -62,10 +62,10 @@
 
     <Button
         android:id="@+id/btnCalcularSalario"
-        android:layout_width="275dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="96dp"
+        android:layout_width="304dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
         android:padding="50px"
         android:text="Calcular"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:shadowColor="#AC1515"
         android:text="Calculadora Salarial"
         android:textColor="@color/white"
@@ -96,5 +96,15 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewEjercicio2"
+        android:layout_width="409dp"
+        android:layout_height="258dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularSalario"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

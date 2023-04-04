@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "672978552992",
+    "project_id": "tallerdsm-7a69c",
+    "storage_bucket": "tallerdsm-7a69c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672978552992:android:73138ce410435944ffe1c5",
+        "android_client_info": {
+          "package_name": "com.example.tallerdsm01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672978552992-nithiuerjrp3smg1vm150i1g1k5h81f3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0qqqFw0MZtG1xxUfnfFQrBPLMwxl8R80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672978552992-nithiuerjrp3smg1vm150i1g1k5h81f3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
